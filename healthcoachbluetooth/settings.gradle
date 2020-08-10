@@ -1,0 +1,2 @@
+rootProject.name='healthcoachbluetooth'
+include ':app', ':poi-4.1.2'
