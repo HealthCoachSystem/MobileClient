@@ -100,7 +100,7 @@ public class SensorListenerManager extends AppCompatActivity implements ESenseSe
 
         previousrms = acc_rms;
 
-        if (nDataCount==15) {
+        if (nDataCount==15) {// 특정개수가 쌓이면 request 보냄
             // json 만들고
             JSONObject data = new JSONObject();
 

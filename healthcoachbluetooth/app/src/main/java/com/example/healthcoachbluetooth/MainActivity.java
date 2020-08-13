@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ToggleButton savebt;
 
     private String TAG = "Esense";
-    private String deviceName = "eSense-0756";  // "eSense-0598"
+    private String deviceName = "eSense-0869";  // "eSense-0598"
     private int timeout = 30000;
 
     private static final int PERMISSION_REQUEST_CODE = 200;
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         };
-        manager = new ESenseManager("eSense-0756", MainActivity.this.getApplicationContext(), eSenseConnectionListener);
+        manager = new ESenseManager("eSense-0869", MainActivity.this.getApplicationContext(), eSenseConnectionListener);
         if (!checkPermission()) {
             requestPermission();
         } else {
